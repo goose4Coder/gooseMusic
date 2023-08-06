@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://vcsc0skvrem8"]
+
+[ext_resource type="Script" path="res://scripts/playlistListViewControl.gd" id="1_yja64"]
+
+[node name="PlaylistListView" type="VBoxContainer"]
+offset_right = 941.0
+offset_bottom = 513.0
+theme_override_constants/separation = 50
+script = ExtResource("1_yja64")

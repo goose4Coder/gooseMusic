@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://kjnlov84ldm0"]
+
+[ext_resource type="Script" path="res://scripts/playlistScreenControl.gd" id="1_c2gmf"]
+[ext_resource type="PackedScene" uid="uid://2kqdc6ia4vmi" path="res://objects/transitionButton.tscn" id="1_wy254"]
+
+[node name="PlaylistScreen" type="Node2D"]
+script = ExtResource("1_c2gmf")
+
+[node name="ExitPanel" type="PanelContainer" parent="."]
+offset_left = 36.0
+offset_top = 27.0
+offset_right = 187.0
+offset_bottom = 126.0
+
+[node name="ExitButton" parent="ExitPanel" instance=ExtResource("1_wy254")]
+layout_mode = 2

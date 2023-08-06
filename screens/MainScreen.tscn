@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://tc4sif0adgak"]
+
+[ext_resource type="PackedScene" uid="uid://vcsc0skvrem8" path="res://objects/playlistListView.tscn" id="1_e03dc"]
+
+[node name="Screen" type="Node2D"]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 57.0
+offset_top = 17.0
+offset_right = 1218.0
+offset_bottom = 689.0
+
+[node name="PlaylistListView" parent="ScrollContainer" instance=ExtResource("1_e03dc")]
+layout_mode = 2
