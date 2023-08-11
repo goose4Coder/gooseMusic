@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://yqbanfx8sbo6"]
+
+[ext_resource type="Script" path="res://scripts/playlistShortcutControl.gd" id="1_nedkb"]
+[ext_resource type="PackedScene" uid="uid://blcj6iv3yj70h" path="res://objects/playlistChangeButtonEnvelope.tscn" id="2_xooy2"]
+
+[node name="PlaylistContainer" type="HBoxContainer"]
+offset_right = 493.0
+offset_bottom = 190.0
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+script = ExtResource("1_nedkb")
+
+[node name="NameLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Название некоего альбома"
+autowrap_mode = 2
+uppercase = true
+
+[node name="GoToPlaylist" parent="." instance=ExtResource("2_xooy2")]
+position = Vector2(207, 3)

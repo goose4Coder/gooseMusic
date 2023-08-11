@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://2kqdc6ia4vmi"]
+
+[ext_resource type="Script" path="res://scripts/transitionButtonControl.gd" id="1_8ijig"]
+
+[node name="Button" type="Button"]
+offset_right = 325.0
+offset_bottom = 158.0
+text = "Включить"
+script = ExtResource("1_8ijig")
