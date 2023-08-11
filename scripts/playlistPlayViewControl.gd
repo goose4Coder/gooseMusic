@@ -1,20 +1,18 @@
 extends Control
 
-@onready var playlistLabel=$VBoxContainer/PlaylistName
-@onready var playlistFirstSongs=$VBoxContainer/FirstSongs
+@onready var playlist_label=$VBoxContainer/PlaylistName
+@onready var playlist_first_songs=$VBoxContainer/FirstSongs
 const composition=preload("res://scripts/classStorage/composition.gd")
 const playlist = preload("res://scripts/classStorage/playlist.gd")
 
-var current_playlist=null
-
-func _load_playlists():
-	current_playlist=playlist.new("coolMusic",[composition.new("a"),composition.new("b")])
-	playlistLabel.text=current_playlist.get_basic_info()["name"]
-	playlistFirstSongs.text=current_playlist.get_basic_info()["first_songs"]
 
 
-func _ready():
-	_load_playlists()
+func _initialize(playlist_to_set:playlist):
+	playlist_label.set_text(playlist_to_set.get_basic_info()["name"])
+	playlist_first_songs.set_text(playlist_to_set.get_basic_info()["first_songs"])
+	
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

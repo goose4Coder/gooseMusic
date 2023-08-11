@@ -3,6 +3,9 @@
 [ext_resource type="Script" path="res://scripts/playlistPlayViewControl.gd" id="1_0sjob"]
 
 [sub_resource type="FontFile" id="FontFile_tla7a"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 face_index = null
 embolden = null
 transform = null
@@ -68,10 +71,10 @@ script = ExtResource("1_0sjob")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 411.0
-offset_top = 16.0
-offset_right = 1252.0
-offset_bottom = 675.0
+offset_left = 30.0
+offset_top = 29.0
+offset_right = 871.0
+offset_bottom = 688.0
 
 [node name="PlaylistName" type="Label" parent="VBoxContainer"]
 layout_mode = 2
@@ -82,7 +85,7 @@ text = "Название альбома"
 [node name="FirstSongs" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Первые песни"
+text = "Первые песни плейлиста вообще"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
 layout_mode = 2

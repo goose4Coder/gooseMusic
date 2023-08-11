@@ -12,7 +12,7 @@ func initialize_playlists():
 	var to_return=[]
 	var playlist_to_add=null
 	for i in range(0,20):
-		playlist_to_add=playlist.new("aboba"+str(i+1),[])
+		playlist_to_add=playlist.new("aboba"+str(i+1),[composition.new("song"+str(i+1)),composition.new("song"+str(i+2))])
 		to_return.append(playlist_to_add)
 	return to_return
 
