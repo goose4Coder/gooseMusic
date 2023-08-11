@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://blcj6iv3yj70h"]
+
+[ext_resource type="PackedScene" uid="uid://2kqdc6ia4vmi" path="res://objects/transitionButton.tscn" id="1_m2et0"]
+[ext_resource type="Script" path="res://scripts/playlistChangeButtonEnvelopeControl.gd" id="1_rnlt7"]
+[ext_resource type="Script" path="res://scripts/playlistTransitionButtonControl.gd" id="2_uia7j"]
+
+[node name="GoToPlaylist" type="Node2D"]
+script = ExtResource("1_rnlt7")
+
+[node name="Button" parent="." instance=ExtResource("1_m2et0")]
+offset_right = 273.0
+offset_bottom = 133.0
+script = ExtResource("2_uia7j")
